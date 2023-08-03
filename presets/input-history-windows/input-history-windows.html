@@ -799,6 +799,7 @@
       if (data.event_type === "key_typed") return;
 
       if (data.event_type.startsWith("mouse")) {
+        return;
         // Ignore mouse movement and click events
         if (
           data.event_type === "mouse_moved" ||
